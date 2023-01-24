@@ -2,7 +2,12 @@ h1{
     color: blue;
 }
 
+#coinButton{
+    display: flex;
+    margin-left: 5%;
+    width: 15%;
+}
+
 #coinImage{
-    position: center;
-    width: 20%;
+    width: 100%;
 }
