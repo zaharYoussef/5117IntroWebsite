@@ -11,3 +11,13 @@ h1{
 #coinImage{
     width: 100%;
 }
+
+#hiddenForm{
+    visibility: hidden;
+}
+
+#myForm{
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 10%;
+}

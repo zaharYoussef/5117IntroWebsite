@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Coin flip</title>
-        <link rel="stylesheet" href="static//css/style.css">
-        <script async defer src="static/js/buttonScript.js"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+        <script async defer src="{{url_for('static', filename='js/buttonScript.js')}}"></script>
     </head>
     <body>
         <h1> Coin flip:</h1>
@@ -15,12 +15,17 @@
             decision step easier.
         </p>
 
-        <button id="coinButton"><img id="coinImage" src="static/images/coinFlipImage.jpeg" alt="coin flip image"></button>
+        <button id="coinButton"><img id="coinImage" src="{{url_for('static', filename='images/coinFlipImage.jpeg')}}" alt="coin flip image"></button>
 
         <p id="resultText"></p>
 
+        <p>
+            Was this helpful?<br>
+            fillout <a href="{{ url_for('form') }}">this survey</a>
+        </p>
 
-
-        
+        <p>
+            {{choice}}
+        </p>
     </body>
 </html>

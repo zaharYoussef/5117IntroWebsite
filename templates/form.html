@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Coin flip</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+        <script async defer src="{{url_for('static', filename='js/buttonScript.js')}}"></script>
+    </head>
+    <body>
+
+        <form id="myForm" method="POST">
+            <label for="title">Fill this form please</label>
+            <div>
+                <fieldset>
+                    <legend>Was this helpful in making a decision</legend>
+                    <input type="radio" id="choice" name="choice" >
+                    <label for="choice">Yes</label><br>
+                    <input type="radio" id="choice" name="choice" >
+                    <label for="choice">No</label><br>
+                    
+                </fieldset>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
